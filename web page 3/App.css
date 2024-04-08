@@ -1,0 +1,224 @@
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: 120px;
+  background-color: rgb(129, 129, 148);
+  float: left;
+  position: sticky;
+  top: 0;
+}
+
+#nav{
+   color: white;
+   line-height: 120px;
+   margin-left: 5%;
+   float: left;
+}
+
+nav{
+width: 60%;
+float: right;
+}
+
+nav ul{
+  margin-right: 10px;
+   margin-top: 50px;
+  float: right;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+section{
+  width: 100%;
+  height: 700px;
+  background-image: url(https://www.accelo.com/assets/Uploads/OpenGraph_WhatIsBusinessConsulting_1200x630.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sec{
+  width: 50%;
+  height: 250px;
+  text-align: center;
+  margin-left: 25%;
+  position: absolute;
+  top: 450px;
+  background-color: rgb(255, 247, 247);
+}
+
+.sec p{
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.sec h1{
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.sec button{
+  padding: 15px;
+  font-size: 20px;
+  margin-top: 25px;
+  transition: 4sec;
+}
+  .sec button:hover{
+      background-color: blue;
+      color: beige;
+  }
+  .main1{
+    width: 100%;
+    height: 500px;
+}
+
+.sec1{
+    margin-left: 10%;
+   float: left;
+    width: 20%;
+    height: 400px;
+   
+    text-align: center;
+}
+
+.sec1 h1{
+     margin-top: 60px;
+     font-size: 40px;
+}
+
+.sec1 p{
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    
+}
+
+.sec1 button{
+    margin-top: 40px;
+    padding: 15px;
+}
+.hed{
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  background-image: url(https://edgethinker.in/wp-content/uploads/2022/08/edgethinker_consulting-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(1, 1, 41);
+}
+
+#p{
+  padding-top: 100px;
+  color: black;
+  font-size: 30px;
+}
+
+.hed p{
+  margin-top: 50px;
+  color: black;
+  font-size: 2 0px;
+}
+
+.hed button{
+  padding: 20px;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.sec2{
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+
+#p1{
+ font-size: 50px;
+ margin-top: 50px;
+}
+.see{
+  margin-top: 50px;
+ display: flex;
+ justify-content: space-evenly;
+}
+
+footer{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(129, 129, 148);
+}
+
+.a{
+  width: 25%;
+  height: 400px;
+  float: left;
+  margin-left: 1%;
+  padding-top: 30px;
+  
+}
+
+.b{
+  width: 25%;
+  height: 400px;
+  float: left;
+  margin-left: 10%;
+  padding-top: 30px;
+  
+}
+
+.c{
+  width: 25%;
+  height: 400px;
+  float: left;           color: azure;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 23px;
+  
+}
+
+#a1{
+  color: white;
+  font-size: 25px;
+}
+
+.a p{
+ text-align: center;
+  margin-top: 33px;
+  color: white;
+}
+
+.b h1{
+  text-align: center;
+  color: white;
+}
+
+.b ul li{
+  text-align: center;
+  padding: 15px;
+  list-style: none;
+}
+
+.b ul li a{
+  color: white;
+  text-decoration: none;
+
+}
+#ty{
+  margin-right: 50px;
+}
+.fa{
+  padding-top: 50px;
+  padding-left: 10px;
+}
