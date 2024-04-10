@@ -1,0 +1,15 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.mp{
+    height: 900px;
+    flex-basis: 30%;
+
+}
+.mp img{
+    height: 40%;
+    width: 100%;
+}
