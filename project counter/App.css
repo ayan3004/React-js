@@ -1,0 +1,130 @@
+.main {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+     background-color: cadetblue;
+}
+
+header{
+  height: 70px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(2, 48, 43);
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+}
+
+.brand{
+  height: 100%;
+  width: 100px;
+  /* border: 1px solid black; */
+}
+
+.brand img{
+  height: 100%;
+  width: 100%;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  margin: 0px 20px;
+  font-size: 17px;
+  color: white;
+}
+
+.contact{
+  height: auto;
+  width: auto;
+  /* border: 1px solid black;  */
+  display: flex;
+  align-items: center;
+}
+
+.contact i{
+  font-size: 25px;
+  margin: 0px 30px;
+  color: white;
+}
+
+.contact span{
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: rgb(39, 38, 37);
+}
+
+
+  @media only screen and (max-width: 720px){
+    header{
+      height: auto;
+      justify-content: space-between;
+    }
+
+    nav a{
+      font-size: 16px;
+    }
+
+   header .contact{
+      display: none;
+    }
+  }
+
+.mp {
+  height: 600px;
+  width: 395px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: ghostwhite;
+  box-shadow: 1px 2px 3px black;
+}
+
+.mp img {
+  height: 30%;
+  width: 75%;
+  /* border: 1px solid black; */
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(-6px 8px 5px grey);
+}
+
+.mp img:hover {
+  transform: scale(120%);
+  filter: drop-shadow(-6px 8px 5px grey);
+
+}
+
+.mp h3,
+p,
+h1 {
+  margin: 5px 0px;
+  text-align: center;
+  z-index: 2000;
+  font-family: "Marmelad", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.helo{
+  margin-left: 5px;
+  background-color: cadetblue;
+  padding: 3px;
+  border-radius: 5px;
+}
+.heelo{
+  color: rgb(38, 138, 38);
+
+}
