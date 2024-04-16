@@ -1,0 +1,19 @@
+.main{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  
+}
+.mp{
+  height: 500px;
+  width: 395px;
+  text-align: center;
+ 
+ 
+}
+.mp img{
+width: 100%;
+height: 70%;
+}
