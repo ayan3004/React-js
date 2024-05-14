@@ -1,28 +1,37 @@
-import React from 'react'
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-function Addpost({addnewpost}) {
-    const [title , settitle ]=useState('')
-    const [Discription ,setdiscription]=useState('')
-    const navigate = useNavigate()
-    function handlesubmit(e){
-e.preventDefault()
-addnewpost(title,Discription)
-navigate('/')
-    }
+import React, { useState } from 'react'
+import {Link , useNavigate} from 'react-router-dom'
 
+function Addpost({addnewPost}) {
+
+    const [title,setTitle] = useState('')
+    const [content,setContent] = useState('')
+
+    const navigate = useNavigate()
+
+    function handleSubmit(e){
+        e.preventDefault()
+        addnewPost(title,content)
+        navigate('/')
+    }
   return (
-    <>
-    <h1>Add post page</h1>
-    <form action="" onSubmit={handlesubmit}>
-<h2>Title :</h2>
-<input type="text" value={title} onChange={(e)=>settitle(e.target.value)}/>
-<h2>Discription :</h2>
-<textarea name="" id="" value={Discription} onChange={(e)=>setdiscription(e.target.value)}></textarea>
-<button type='submit'>Submit</button>
-    </form>
-   <Link to='/'></Link>
-    </>
+   <center> 
+    <div>
+   <h2>ADD POST</h2>
+
+ <form onSubmit={handleSubmit}>
+     <h1>Title : </h1>
+     <input value={title} onChange={(e)=>setTitle(e.target.value)}/> <br/><br/><br/>
+
+     <h1>Content :</h1>
+     <textarea value={content} onChange={(e)=>setContent(e.target.value)}></textarea> <br/><br/><br/>
+
+     <button type='submit'>ADD POST</button><br/><br/><br/>
+ </form>
+
+
+   <Link to = "/">Back TO Home Page</Link>
+ </div>
+ </center>
   )
 }
 

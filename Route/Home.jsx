@@ -1,20 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-function Home(posts) {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+
+function Home({ posts }) { 
   return (
-    <>
-<h1>Welcome to our website</h1>
-{
-    posts.map((el)=>{
-        <>
-        <h2>{el.title}</h2>
-        <h4>{el.Discription}</h4>
-        </>
-    })
-}
-<Link to='/add'>Add post</Link>
-    </>
-  )
+    <center>
+      <div>
+      <h1>Welcome To our Page</h1>
+      {
+        posts.map((el) => (
+          <div key={el.id}> 
+            <h2>{el.title}</h2>
+            <p>{el.content}</p>
+          </div>
+        ))
+      }
+      <Link to="/add">ADD POST</Link>
+    </div>
+    </center>
+  );
 }
 
-export default Home
+export default Home;
