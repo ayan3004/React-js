@@ -16,7 +16,16 @@ const hello = (state = initialState, action) => {
         ...state,
         counter1: { count: Math.max(0, state.counter1.count - 1) },
       };
-    
+    case INC:
+      return {
+        ...state,
+        counter2: { count: state.counter2.count + 1 },
+      };
+    case DEC:
+      return {
+        ...state,
+        counter2: { count: Math.max(0, state.counter2.count - 1) },
+      };
     default:
       return state;
   }

@@ -9,28 +9,20 @@ function App() {
 
   return (
     <>
-    <div className="main">
+    
+<center>
+<div className="main">
     <h1 className="heading">Counter App</h1>
-      <div className="boxes">
-        <div className="box">
+      
         <h1>Counter 1: {count}</h1>
         <div className="btns">
-        <button onClick={() => { dispatch(increment()) }}>Inc +</button><br/><br/>
-        <button  onClick={() => { dispatch(decrement()) }}>Dec -</button>
+        <button className="btn1" onClick={() => { dispatch(increment()) }}>Inc +</button><br/><br/>
+        <button className="btn" onClick={() => { dispatch(decrement()) }}>Dec -</button>
         </div>
         </div>
+</center>
+        
 
-        <div className="box">
-        <h1>Counter 2: {count2}</h1>
-        <div className="btns">
-        <button onClick={() => { dispatch(inc()) }}>Inc +</button><br/><br/>
-        <button onClick={() => { dispatch(dec()) }}>Dec -</button>
-        </div>
-        </div>
-
-      </div>
-    </div>
-      
     </>
   );
 }
