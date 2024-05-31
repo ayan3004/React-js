@@ -16,7 +16,7 @@ const reducer = (state ,action) =>{
         case DECREMENT : return{
             ...state,
             prices : state.prices.map(item=>
-                item.id === action.payload
+                item.id === action.payload && item.value > 0
                 ?{
                     ...item , value :item.value - item.price
                 } : item
