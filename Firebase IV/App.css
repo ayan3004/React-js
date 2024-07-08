@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.1); /* light grey background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration-container {
+  background-color: rgba(255, 255, 255, 0.9); /* white background with some transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin: 10px 0 5px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="password"],
+.registration-form input[type="submit"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-form input[type="submit"] {
+  background-color: rgba(0, 123, 255, 0.8); /* semi-transparent blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-form input[type="submit"]:hover {
+  background-color: rgba(0, 123, 255, 1); /* solid blue on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+ul li button {
+  background-color: rgba(220, 53, 69, 0.8); /* semi-transparent red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ul li button:hover {
+  background-color: rgba(220, 53, 69, 1); /* solid red on hover */
+}
+
+ul li button:nth-child(2) {
+  background-color: rgba(40, 167, 69, 0.8); /* semi-transparent green */
+  margin-left: 5px;
+}
+
+ul li button:nth-child(2):hover {
+  background-color: rgba(40, 167, 69, 1); /* solid green on hover */
+}
